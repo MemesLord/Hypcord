@@ -63,16 +63,7 @@ function random() {
 
 bot.on("ready", function() {
     console.log("Bot Started");
-    bot.user.setPresence({ game: { name: "Ben is gay", type: 0 } });
-});
-
-bot.on("guildMemberAdd", function(member) {
-
-    
-});
-
-bot.on("guildMemberRemove", function(member) {
-    
+    bot.user.setPresence({ game: { name: "Your game", type: 0 } });
 });
 
 bot.on("message", function(message) {
