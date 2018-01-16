@@ -4,7 +4,7 @@ This bot is a easy way to check your hypixel stats from your discord server! It 
 
 # Commands
 
-*Things in [] are optional
+*Things in [] are optional*
 
 !player [Game] (Player) - This will send you the stats of the specified game or the basic stats of a player. The currently supported games are:
 
