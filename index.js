@@ -227,7 +227,7 @@ bot.on("message", function(message) {
                        }
 
                     message.reply("Fetching basic stats for " + args[1]);
-                    var url = 'https://api.hypixel.net/player?key=ba8d688a-941a-4fa2-8e61-ff5b421e62a7&uuid=' + body2.id;
+                    var url = 'https://api.hypixel.net/player?key=YOURAPIKEY&uuid=' + body2.id;
                     request(url, function(err, response, body) {
                         if(err) {
                             console.log(err);
@@ -241,14 +241,14 @@ bot.on("message", function(message) {
                             message.reply("That player has never logged into hypixel.");
                             return;
                         }
-                        var url = 'https://api.hypixel.net/friends?key=ba8d688a-941a-4fa2-8e61-ff5b421e62a7&uuid=' + body2.id;
+                        var url = 'https://api.hypixel.net/friends?key=YOURAPIKEY&uuid=' + body2.id;
                         request(url, function(err, response, body3) {
                         if(err) {
                             console.log(err);
                             return message.reply('Error...');
                         }
                         var body3 = JSON.parse(body3);
-                        var url = 'https://api.hypixel.net/session?key=ba8d688a-941a-4fa2-8e61-ff5b421e62a7&uuid=' + body2.id;
+                        var url = 'https://api.hypixel.net/session?key=YOURAPIKEY&uuid=' + body2.id;
                         request(url, function(err, response, body4) {
                         if(err) {
                             console.log(err);
@@ -359,7 +359,7 @@ bot.on("message", function(message) {
                        }
 
                     message.reply("Fetching " + game.toLowerCase() + " stats for " + args[2]);
-                    var url = 'https://api.hypixel.net/player?key=ba8d688a-941a-4fa2-8e61-ff5b421e62a7&uuid=' + body2.id;
+                    var url = 'https://api.hypixel.net/player?key=YOURAPIKEY&uuid=' + body2.id;
                     request(url, function(err, response, body) {
                         if(err) {
                             console.log(err);
@@ -373,14 +373,14 @@ bot.on("message", function(message) {
                             message.reply("That player has never logged into hypixel.");
                             return;
                         }
-                        var url = 'https://api.hypixel.net/friends?key=ba8d688a-941a-4fa2-8e61-ff5b421e62a7&uuid=' + body2.id;
+                        var url = 'https://api.hypixel.net/friends?key=YOURAPIKEY&uuid=' + body2.id;
                         request(url, function(err, response, body3) {
                         if(err) {
                             console.log(err);
                             return message.reply('Error...');
                         }
                         var body3 = JSON.parse(body3);
-                        var url = 'https://api.hypixel.net/session?key=ba8d688a-941a-4fa2-8e61-ff5b421e62a7&uuid=' + body2.id;
+                        var url = 'https://api.hypixel.net/session?key=YOURAPIKEY&uuid=' + body2.id;
                         request(url, function(err, response, body4) {
                         if(err) {
                             console.log(err);
