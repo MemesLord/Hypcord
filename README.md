@@ -1,6 +1,6 @@
 # Hypcord
 
-This bot is a easy way to check your hypixel stats from your discord server! It also does a little replace message whenever you type ez in any channel :D
+This bot is a easy way to check your hypixel stats from your discord server! Soon you will be able to search for other hypixel players discord's.
 
 # Commands
 
