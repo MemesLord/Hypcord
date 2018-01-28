@@ -54,13 +54,6 @@ bot.on("message", function(message) {
     }
 
     switch (args[0].toLowerCase()) {
-        case "run":
-          if (message.author.id == 139555832923684864) {
-            message.channel.send(args.join(" ").slice(3));
-          } else {
-
-          }
-          break;
         case "namehistory":
             if (args[1] != null) {
                 var url = 'https://api.mojang.com/users/profiles/minecraft/' + args[1];
@@ -128,36 +121,6 @@ bot.on("message", function(message) {
                                 });
             } else {
                 message.reply("Please use !namehistory (Player)");
-            }
-            break;
-        case "link":
-            if (args.length != 2) {
-                message.reply("Please use !link (API Key) - You can get this by doing /api in-game");
-            } else {
-                message.delete();
-                var key = args[1];
-                var url = 'https://api.hypixel.net/key?key=' + key;
-                request(url, function(err, response, body) {
-                    if(err) {
-                        console.log(err);
-                        return message.reply('Error...');
-                    }
-                    var body = JSON.parse(body);
-                    if (body.success != true) {
-                        message.reply("That is an invalid API key! - You can get your api key by doing /api in-game");
-                    } else {
-                        var url = 'https://api.hypixel.net/player?key=YOURAPIKEYHERE&uuid=' + body.record.ownerUuid;
-                        request(url, function(err, response, body2) {
-                        if(err) {
-                            console.log(err);
-                            return message.reply('Error...');
-                        }
-                        var body2 = JSON.parse(body2);
-                        message.reply("Your discord has been linked to " + body2.player.displayname + "! Other users of the bot can now search for your discord. If you are not okay with this please do !unlink.");
-                        });
-
-                    }
-                });
             }
             break;
         case "suggest":
