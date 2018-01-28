@@ -1,4 +1,4 @@
-# EzBot
+# Hypcord
 
 This bot is a easy way to check your hypixel stats from your discord server! It also does a little replace message whenever you type ez in any channel :D
 
@@ -16,6 +16,8 @@ More games will be added soon.
 
 !hypixelmeme - This will send a random hypixel meme. If you host it yourself you can add more memes.
 
+!suggest (Suggestion) - This will PM me a suggestion.
+
 # Install
 
 There are two options to install. You can either host the bot yourself or you can add it to your server from my hosting.
@@ -27,7 +29,7 @@ There are two options to install. You can either host the bot yourself or you ca
 - Adding the bot to your server from my hosting 
 
     You can add the bot to your server with this link. 
-    `https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=388615888070246401`
+    `https://discordapp.com/oauth2/authorize?client_id=406977795600941066&scope=bot&permissions=2146958591`
 
 # License
 
