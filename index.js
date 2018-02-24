@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const TOKEN = "NDA2OTc3Nzk1NjAwOTQxMDY2.DU6zIg.l3zR79sHoXt9FC64ps9d5LGN4gM";
+const TOKEN = "stop";
 const PREFIX = "!";
 const fs = require("fs");
 
