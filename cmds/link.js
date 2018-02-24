@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
                 if (body.success != true) {
                     message.reply("That is an invalid API key! - You can get your api key by doing /api in-game");
                 } else {
-                    var url = 'https://api.hypixel.net/player?key=a3adcfe3-490c-44b9-ba79-a243f4da3a0a&uuid=' + body.record.ownerUuid;
+                    var url = 'https://api.hypixel.net/player?key=apikey&uuid=' + body.record.ownerUuid;
                     request(url, function(err, response, body2) {
                     if(err) {
                         console.log(err);
